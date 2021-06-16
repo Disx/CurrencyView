@@ -56,6 +56,6 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$depVer.okhttp"
     implementation "com.squareup.retrofit2:converter-gson:$depVer.gsonConverter"
 
-    // Gson
+    // Gson Lib
     implementation "com.google.code.gson:gson:$depVer.gson"
 }
