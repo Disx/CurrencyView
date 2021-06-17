@@ -21,12 +21,12 @@ class LoginActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             binding.progressBar.visibility = View.VISIBLE
             binding.button.alpha = 0f
-            Handler(this.mainLooper).postDelayed({
-                binding.progressBar.visibility = View.GONE
-                binding.button.alpha = 1f
-//                Snackbar.make(view, "Login data submitted", Snackbar.LENGTH_SHORT).show()
-                this.finish()
-            }, 1000)
+//            Handler(this.mainLooper).postDelayed({
+//                binding.progressBar.visibility = View.GONE
+////                binding.button.alpha = 1f
+////                Snackbar.make(view, "Login data submitted", Snackbar.LENGTH_SHORT).show()
+//                this.finish()
+//            }, 1000)
         }
     }
 
