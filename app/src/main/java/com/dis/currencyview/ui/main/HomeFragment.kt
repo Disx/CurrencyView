@@ -34,7 +34,6 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         if (viewModel.isAuthorized()){
             viewModel.isLoggedIn.observe(viewLifecycleOwner, Observer { stateLoggedIn ->
                 binding.message.text = "isLoggedIn = ${stateLoggedIn}"
@@ -42,8 +41,6 @@ class HomeFragment : Fragment() {
         } else {
             startActivity(Intent(requireContext(), LoginActivity::class.java))
         }
-
-
     }
 
     override fun onDestroy() {
